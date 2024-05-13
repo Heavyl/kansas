@@ -1,0 +1,165 @@
+#root {
+  max-width: 1280px;
+  margin: auto;
+  padding: 2rem;
+  
+}
+
+.d-none{
+  display: none;
+}
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(22deg, rgba(0,0,0,1) 0%, rgba(27,27,27,1) 100%);
+}
+.container{
+  width: 600px;
+}
+
+/*SCREEN*/
+
+.screen{
+  max-width: 600px;
+  text-align: center;
+  padding: 20px 100px;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  border : 1px solid white;
+}
+.word-input{
+  width: 100%;
+}
+#word-prompt{
+  display: flex;
+}
+.form-label{
+  display:block;
+  width: 100%;
+}
+
+.word-to-guess{
+  font-size: 4em;
+}
+/*SETUP*/
+form{
+  width:400px;
+  margin:auto;
+
+}
+
+
+/*COUNTER*/
+#counter-container{
+  width: 100px;
+  height: 100px;
+  position : fixed;
+  right: 5rem;
+  top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #141414;
+  border-radius: 100px;
+  font-size: 3rem;
+  font-weight: bold;
+  box-shadow: 0 0 .5em white;
+}
+
+/*ENDSCREEN*/
+
+.try-list{
+
+  width : 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+}
+.try-list li{
+  padding: 0.5rem 1rem;
+  margin : 0.2rem;
+  border-radius : 5px;
+  border: 1px solid white;
+  background-color: #141414 ;
+}
+
+/*MESSAGE*/
+.message{
+  text-align: center;
+  display:block;
+  margin: 1rem 0 1rem 0;
+}
+
+/*TITLE*/
+
+h1{
+  text-align: center;
+}
+
+/*SPEED PROCESS*/
+
+.speed-process{
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+/*DUAL RANGE SLIDER*/
+
+label{
+  display:block
+}
+input[type=range] {
+  box-sizing: border-box;
+  appearance: none;
+  width: 50%;
+  margin: 0;
+  padding: 0 2px;
+  /* Add some L/R padding to ensure box shadow of handle is shown */
+  overflow: hidden;
+  border: 0;
+  border-radius: 1px;
+  outline: none;
+  background: linear-gradient(grey, grey) no-repeat center;
+  /* Use a linear gradient to generate only the 2px height background */
+  background-size: 100% 2px;
+  pointer-events: none;
+
+  &:active,
+  &:focus {
+     outline: none;
+  }
+
+  &::-webkit-slider-thumb {
+     height: 28px;
+     width: 28px;
+     border-radius: 28px;
+     background-color: #fff;
+     position: relative;
+     margin: 5px 0;
+     /* Add some margin to ensure box shadow is shown */
+     cursor: pointer;
+     appearance: none;
+     pointer-events: all;
+     box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+     &::before {
+           content: ' ';
+           display: block;
+           position: absolute;
+           top: 13px;
+           left: 100%;
+           width: 2000px;
+           height: 2px;
+     }
+  }
+}
+
+.multi-range {
+  
+  position: relative;
+  height: 50px;
+}
