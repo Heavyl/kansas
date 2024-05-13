@@ -29,3 +29,4 @@ Used:
 To be implemented later:
 - Next.js 
 - Tailwind
+- TypeScript
