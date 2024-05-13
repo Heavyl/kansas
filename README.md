@@ -5,7 +5,7 @@ So here it is, my first React application. It's obviously a work in progress.
 
 # What is Kansas City Shuffle 
 
-This is a small probabilistic bet game app. What the hell does in mean ? Let me explain. 
+This is a small probabilistic bet game app. What the hell does it mean ? Let me explain. 
 
 User enter a word as input, each second the app shuffle letters randomly, until the order of the letters match the word again. 
 The goal is to guess how many tries will it take. 
